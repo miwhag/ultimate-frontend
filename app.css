@@ -57,7 +57,7 @@ body{
 
 }
 header{
-    height: 17em;
+    height: 19em;
     background-color:white;
     display: block;
 }
@@ -65,12 +65,23 @@ header{
 .image-container{
 display: flex;
 justify-content: center;
+padding-top:3em;
 }
 
+.small-frisbee-logo{
+	width: 2em;
+}
 /* .links {
     display: flex; 
     justify-content: flex-end; 
 } */
+
+.game-content{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	height: 30em;
+	background-color: #c81912;
+}
 
 .hamburger{
     width: 3em;
@@ -118,9 +129,6 @@ video{
   .about-players{
 	  height: 30em;
   }
-  
-  .phone-container{
-	  padding-top: 10em;
-	  padding-left: 10em;
 
-  }
+  
+
