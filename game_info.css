@@ -25,7 +25,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+HTML5 display-role reset for older browsers
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -49,7 +49,7 @@ table {
 	border-spacing: 0;
 }
 
-/* ####################################### */
+/* ########################### */
 
 
 body{
@@ -57,30 +57,63 @@ body{
 }
 
 header {
-	height: 20.5em;
-    background: rgb(239,242,249);
-    background: radial-gradient(circle, rgba(239,242,249,1) 0%, rgba(196,208,232,0.8211659663865546) 100%);
     display: flex;
+    justify-content: center;
+	height: 20.5em;
+	background: rgb(54,110,216);
+	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
+}
 
+.header-text{
+    font-size: 5em;
+    color: white;
+    text-align: center;
 }
 
 main{
-    display: block;
-    margin-top: 4em;
-    width: 100%;
-}
-
-#team-picture-container{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 10em;
-}
-.team-picture{
-width: 35em;
-padding-top: 1em;
+    max-width: 100%;
 
 }
 
+.game-info-section{
+background-color: white;
+width: 70em;
+height: 50em;
+}
+
+
+.rival-vs-home-section{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+     width: 45%;
+     height: 50em;
+}
+
+.team-image, .rival-image{
+width: 15em;
+height: 15em;
+
+}
+
+.team-image-container, .rival-image-container{
+    width: 15em;
+    height: 15em;
+}
+
+.rival-div, .team-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vs{
+    align-self: center;
+    font-size: 2.5em;
+    padding: 0.1em;
+    padding-left: 0.5em;
+}
 .header-title{
     color: black;
     font-size: 4em;
@@ -88,17 +121,6 @@ padding-top: 1em;
     padding-right: em;
 }
 
-table {
-    width: 90%;  
-}
-
-tr, th, td {
-	border: 1px solid black;
-	width: 30rem;
-	font-size: 1.1em;
-    padding: 0.3em;
-    
-}
 
 .small-frisbee-logo{
 	width: 2em;
@@ -109,19 +131,11 @@ tr, th, td {
     height: 7em;
 }
 
-.game-div-container{
-    display: flex;
-    justify-content: space-around;
-    height: 12em;
-    width:90%;
-    padding: 2em;
-    margin: auto;
-    margin-top: 4em;
-    box-shadow: 5px 10px 40px #bbbbbb
-}
 
 h5,h4{
     align-self: center;
+    font-size: 1.3em;
+    font-weight: 900;
 }
 
 

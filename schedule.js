@@ -9,7 +9,7 @@ fetch('http://localhost:3000/team_games')
 .then(teamGames=> {
     console.log(teamGames)
     teamGames.map(gameObject=> {
-        // console.log(game)
+        console.log(gameObject)
         let gameContainer = document.createElement('div')
         gameContainer.className = 'game-div-container'
 
@@ -18,10 +18,10 @@ fetch('http://localhost:3000/team_games')
         let time = document.createElement('h5')
         let score = document.createElement('h5')
         let teamImage = document.createElement('img')
-        let locationId = document.createElement('h5')
         let locationName = document.createElement('h5')
+        let seeMoreInfo = document.createElement('h5')
         
-
+ 
         
         rivalName.innerText = gameObject.rival.name
         date.innerText = gameObject.game.date
@@ -29,12 +29,13 @@ fetch('http://localhost:3000/team_games')
         score.innerText = gameObject.game.score_id
         teamImage.src = gameObject.rival.image
         teamImage.className = "team-logo"
-        locationName.innerHTML = `<a href="about_game_location.html?id=${gameObject.game.location_id}">${gameObject.game.location.name}</a>`
+        locationName.innerHTML = gameObject.game.location.name
+        seeMoreInfo.innerHTML = `<a href="game_info.html?id=${gameObject.id}"> View More </a>`
        
 
             
         main.append(gameContainer)
-        gameContainer.append(teamImage,rivalName, date, time, score, locationName)
+        gameContainer.append(teamImage,rivalName, date, time, locationName, seeMoreInfo)
 
         // gameContainer.addEventListener('click', event => {
             
@@ -46,7 +47,7 @@ fetch('http://localhost:3000/team_games')
     headerImg.src = 'team.png'
     headerImg.className = 'team-picture'
     headerTitle.className = 'header-title'
-    headerTitle.innerText = "Schedule"
+    headerTitle.innerText = "SCHEDULE"
     scheduleHeader.append(headerTitle, headerImg)
 })
 

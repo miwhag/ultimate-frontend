@@ -57,7 +57,8 @@ body{
 
 }
 header{
-    height: 25em;
+	height: 25em;
+	margin-bottom: 1em;
     background-color:white;
 	display: block;
 	
@@ -76,15 +77,13 @@ padding-bottom: 1.5em;
 
 
 .game-content{
-	height: 20em;
-	background-color: white;
+	height: 27em;
+	background: rgb(54,110,216);
+	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	margin: 6em;
-	padding-top: 5em;
-	
-
+	padding-left: 3em;
 }
 
 .value_icons{
@@ -134,7 +133,6 @@ padding-bottom: 1.5em;
 	  display: flex;
 	  justify-content: center;
 	  padding-right: 3em;
-	  padding-top: 0.6em;
   }
 
 

@@ -58,8 +58,8 @@ body{
 
 header {
 	height: 20.5em;
-    background: rgb(239,242,249);
-    background: radial-gradient(circle, rgba(239,242,249,1) 0%, rgba(196,208,232,0.8211659663865546) 100%);
+	background: rgb(54,110,216);
+	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
     display: flex;
 
 }
@@ -82,23 +82,11 @@ padding-top: 1em;
 }
 
 .header-title{
-    color: black;
+    color: white;
     font-size: 4em;
     align-self: center;
-    padding-right: em;
 }
 
-table {
-    width: 90%;  
-}
-
-tr, th, td {
-	border: 1px solid black;
-	width: 30rem;
-	font-size: 1.1em;
-    padding: 0.3em;
-    
-}
 
 .small-frisbee-logo{
 	width: 2em;
@@ -116,7 +104,8 @@ tr, th, td {
     width:90%;
     padding: 2em;
     margin: auto;
-    margin-top: 4em;
+    margin-top: 3em;
+    margin-bottom: 2em;
     box-shadow: 5px 10px 40px #bbbbbb
 }
 
