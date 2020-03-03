@@ -57,31 +57,42 @@ body{
 
 }
 header{
-    height: 19em;
+    height: 25em;
     background-color:white;
-    display: block;
+	display: block;
+	
 }
 
 .image-container{
 display: flex;
 justify-content: center;
-padding-top:3em;
+padding-top: 2em;
+padding-bottom: 1.5em;
 }
 
 .small-frisbee-logo{
 	width: 2em;
 }
-/* .links {
-    display: flex; 
-    justify-content: flex-end; 
-} */
+
 
 .game-content{
-	margin-top: 2em;
-	margin-bottom: 2em;
-	height: 30em;
-	background-color: #c81912;
+	height: 20em;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 6em;
+	padding-top: 5em;
+	
+
 }
+
+.value_icons{
+	width: 30em;
+	padding: 3em;
+	margin-left: 2em;
+	}
+
 
 .hamburger{
     width: 3em;
@@ -89,46 +100,45 @@ padding-top:3em;
     padding-top: 1em;
 }
 
+  .logo{
+	  width: 8em;
+  }
 
-video{
-    width: 100%;
-}
-  
-  .dropdown {
-	position: relative;
-	display: inline-block;
+  .carousel{
+	  /* margin-top: 2em; */
+	  margin-bottom: 5em;
   }
-  
-  .dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+  .carousel-image {
+	display: block;
+	height: 35em;
+
+	margin-right: 1em;
+	top: 50%;
+	transform: translateY(-50%)
   }
-  
-  .dropdown-content a {
-	color: black;
-	padding: 20px 20px;
-	text-decoration: none;
+
+  .carousel-cell:before {
 	display: block;
   }
-  
-  .dropdown-content a:hover {
-	  background-color: #f1f1f1;
-	  color: #293a80;
-	  font-weight: bolder;
+
+  @media screen and ( min-width: 10em ) {
+	.carousel img {
+	  height: 40em;
 	}
-
-
-  .dropdown:hover .dropdown-content {
-	display: block;
   }
-
-  .about-players{
-	  height: 30em;
-  }
-
   
+  .main_sub_section{
+	  height: 21em;
+	  background: rgb(54,110,216);
+	  background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
+	  display: flex;
+	  justify-content: center;
+	  padding-right: 3em;
+	  padding-top: 0.6em;
+  }
 
+
+  .flatiron_logo_main_section{
+	padding-top: 3em;
+	width: 16em;
+  }

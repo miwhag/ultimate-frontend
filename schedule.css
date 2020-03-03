@@ -58,7 +58,8 @@ body{
 
 header {
 	height: 20.5em;
-	background-color:#c81912;
+    background: rgb(239,242,249);
+    background: radial-gradient(circle, rgba(239,242,249,1) 0%, rgba(196,208,232,0.8211659663865546) 100%);
     display: flex;
 
 }
@@ -81,9 +82,10 @@ padding-top: 1em;
 }
 
 .header-title{
-    color: white;
-    padding-top: 1em;
+    color: black;
     font-size: 4em;
+    align-self: center;
+    padding-right: em;
 }
 
 table {
@@ -102,9 +104,14 @@ tr, th, td {
 	width: 2em;
 }
 
+.team-logo{
+    width: 7em;
+    height: 7em;
+}
+
 .game-div-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 12em;
     width:90%;
     padding: 2em;
@@ -113,6 +120,8 @@ tr, th, td {
     box-shadow: 5px 10px 40px #bbbbbb
 }
 
-h5{
+h5,h4{
     align-self: center;
 }
+
+
