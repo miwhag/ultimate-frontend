@@ -74,17 +74,16 @@ main{
 #team-picture-container{
     display: flex;
     justify-content: flex-end;
+    padding-right: 10em;
 }
-
 .team-picture{
 width: 35em;
 padding-top: 1em;
-
 }
 
-.header-title{
+.header-text{
     color: white;
-    font-size: 4em;
+    font-size: 2em;
     align-self: center;
 }
 
@@ -97,21 +96,3 @@ padding-top: 1em;
     width: 7em;
     height: 7em;
 }
-
-.game-div-container{
-    display: flex;
-    justify-content: space-around;
-    height: 12em;
-    width:90%;
-    padding: 2em;
-    margin: auto;
-    margin-top: 3em;
-    margin-bottom: 2em;
-    box-shadow: 5px 10px 40px #bbbbbb
-}
-
-h5,h4{
-    align-self: center;
-}
-
-

@@ -44,7 +44,7 @@ fetch('http://localhost:3000/team_games')
 
     let headerTitle = document.createElement('h1')
     let headerImg = document.createElement('img')
-    headerImg.src = 'team.png'
+    headerImg.src = '/photos/team.png'
     headerImg.className = 'team-picture'
     headerTitle.className = 'header-title'
     headerTitle.innerText = "SCHEDULE"

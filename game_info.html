@@ -6,11 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="game_info.css">
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeKZ3741MNjt5QMyUx8bO6G-CIyqWW3cc&callback=initMap" async defer></script> -->
     <script src="game_info.js" defer></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <img class ="small-frisbee-logo" src="friss.png"/>
+    <img class ="small-frisbee-logo" src="/photos/friss.png"/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,31 +26,30 @@
           <a class="nav-link dropdown-toggle" href="schedule.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Schedule</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="schedule.html">View Schedule</a>
-            <a class="dropdown-item" href="#">Edit Schedule</a>
+            <a class="dropdown-item" href="edit_game.html">Edit Schedule</a>
           </div>
         </li>
 
-       
         <li class="nav-item">
-            <a class="nav-link" href="schedule.html">Playbook</a>
+            <a class="nav-link" href="playbook.html">Playbook</a>
           </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="schedule.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="frisbee.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Frisbee
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">What is frisbee?</a>
-              <a class="dropdown-item" href="#">Frisbee Terms</a>
+              <a class="dropdown-item" href="frisbee.html">What is frisbee?</a>
+              <a class="dropdown-item" href="terms.html">Frisbee Terms</a>
             </div>
           </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="schedule.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="team_roster.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Team
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Roster</a>
-            <a class="dropdown-item" href="#">Staff</a>
+            <a class="dropdown-item" href="team_roster.html">Roster</a>
+            <a class="dropdown-item" href="league.html">Leauge</a>
           </div>
         </li>
       </ul>
@@ -63,11 +63,9 @@
     </header>
 
     <main>
-      <section class="rival-vs-home-section">
-      </section>
-
+      <section class="rival-vs-home-section"></section>
       <section><div class="game-info-section"></div></section>
- 
+      <div id="map"></div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>

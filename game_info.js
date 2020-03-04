@@ -8,7 +8,7 @@ const gameInfoSection = document.querySelector('.game-info-section')
 fetch(`http://localhost:3000/team_games/${id}`)
 .then(response => response.json())
 .then(teamObject=> {
-    console.log(teamObject)
+    // console.log(teamObject)
 
         let pageTitle = document.createElement('h2')
         pageTitle.innerText = "MATCHUP"
@@ -42,7 +42,6 @@ fetch(`http://localhost:3000/team_games/${id}`)
         let locationName = document.createElement('h5')
         let locationAddress = document.createElement('h5')
 
-       
 
         teamName.innerText = teamObject.team.name
         teamColor.innerText = teamObject.team.color
@@ -66,3 +65,22 @@ fetch(`http://localhost:3000/team_games/${id}`)
         teamImageContainer.appendChild(teamImage)
 
 })
+
+
+var map;
+function initMap() {
+map = new google.maps.Map(document.getElementById('map'), {
+center: {lat: 39.742043, lng: -104.991531},
+zoom: 15
+});
+}
+
+
+// var map;
+// function initMap() {
+// map = new google.maps.Map(document.getElementById('map'), {
+// center: `{lat: ${teamObject.game.location.lat}, lng: ${teamObject.game.location.lng}}`,
+// zoom: 15
+// });
+// }
+

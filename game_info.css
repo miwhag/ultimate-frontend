@@ -68,6 +68,7 @@ header {
     font-size: 5em;
     color: white;
     text-align: center;
+    align-self: center;
 }
 
 main{
@@ -133,9 +134,18 @@ height: 15em;
 
 
 h5,h4{
-    align-self: center;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 900;
+    margin: 1em;
 }
 
 
+#map {
+    height: 100%;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
