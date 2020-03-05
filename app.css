@@ -78,8 +78,6 @@ padding-bottom: 1.5em;
 
 .game-content{
 	height: 27em;
-	background: rgb(54,110,216);
-	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
 	display: flex;
 	align-items: center;
 	justify-content: space-around;

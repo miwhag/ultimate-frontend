@@ -28,7 +28,6 @@
             <a class="dropdown-item" href="edit_game.html">Edit Schedule</a>
           </div>
         </li>
-
        
         <li class="nav-item">
             <a class="nav-link" href="">Playbook</a>
@@ -64,6 +63,44 @@
     </header>
 
     <main>
+      <section class="form-container">
+        <form class="new-game-form">
+
+          <div class="form-group">
+            <label for="team">Team Name:</label>
+              <select id="team-select" name="team"></select>
+          </div>
+
+          <div class="form-group">
+            <label for="rival">Rival Name:</label>
+              <select id="rival-select" name="rival"></select>
+          </div>
+
+          <div class="form-group">
+              <label for="time">Time:</label>
+              <input type="text" name="time" placeholder="Time" />
+          </div>
+
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="text" name="date" placeholder="Date" />
+        </div>
+
+        <div class="form-group">
+          <label for="season">Season:</label>
+            <select id="season-select" name="season"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location:</label>
+            <select id="location-select" name="location"></select>
+        </div>
+
+          <button type="submit" class="btn btn-primary schedule-game-button">Schedule Game</button>
+      </form>
+  
+      </section>
+      <section class="cards-container"></section>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
