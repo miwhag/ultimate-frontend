@@ -56,15 +56,17 @@ body{
     font-family: 'Raleway' ;
 
 }
+
 header{
 	height: 25em;
+	background: rgb(54,110,216);
+	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
+    display: block;
+	justify-content: flex-end;
 	margin-bottom: 1em;
-    background-color:white;
-	display: block;
-	
-}
+  }
 
-.image-container{
+.logo-container{
 display: flex;
 justify-content: center;
 padding-top: 2em;
@@ -75,7 +77,6 @@ padding-bottom: 1.5em;
 	width: 2em;
 }
 
-
 .game-content{
 	height: 27em;
 	display: flex;
@@ -84,25 +85,18 @@ padding-bottom: 1.5em;
 	padding-left: 3em;
 }
 
-.value_icons{
-	width: 30em;
-	padding: 3em;
-	margin-left: 2em;
-	}
-
-
 .hamburger{
     width: 3em;
     padding-left: 1.5em;
     padding-top: 1em;
 }
 
-  .logo{
-	  width: 8em;
-  }
+.logo{
+	width:17em;
+	height:16.6em;
+}
 
   .carousel{
-	  /* margin-top: 2em; */
 	  margin-bottom: 5em;
   }
   .carousel-image {
@@ -124,17 +118,4 @@ padding-bottom: 1.5em;
 	}
   }
   
-  .main_sub_section{
-	  height: 21em;
-	  background: rgb(54,110,216);
-	  background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
-	  display: flex;
-	  justify-content: center;
-	  padding-right: 3em;
-  }
 
-
-  .flatiron_logo_main_section{
-	padding-top: 3em;
-	width: 16em;
-  }

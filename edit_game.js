@@ -1,4 +1,3 @@
-
 const header = document.querySelector('header')
 let headerTitle = document.createElement('h1')
 let headerImg = document.createElement('img')
@@ -30,7 +29,6 @@ function createScheduleCard(teams){
         cardBody.innerHTML = `
         <h5 class="card-text"> Name: ${teamObject.rival.name}</h4>
        <p class="card-text">Team Color:  ${teamObject.rival.color}</p><br>
-
         <p class="card-text"> Game Time:  ${teamObject.game.time}</p>
         <p class="card-text"> Game Date:   ${teamObject.game.date}</p><br>
         
@@ -221,4 +219,3 @@ deleteButton.addEventListener('click', () => {
         }
     }
     })
-
