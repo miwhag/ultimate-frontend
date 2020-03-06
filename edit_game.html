@@ -63,9 +63,12 @@
     </header>
 
     <main>
-      <section class="form-container">
-        <form class="new-game-form">
 
+
+      <section class="form-container">
+
+        <form class="new-game-form">
+          <h1> Schedule New Game</h1>
           <div class="form-group">
             <label for="team">Team Name:</label>
               <select id="team-select" name="team"></select>
@@ -73,7 +76,7 @@
 
           <div class="form-group">
             <label for="rival">Rival Name:</label>
-              <select id="rival-select" name="rival"></select>
+              <select id="rival-select" name="rival"><option style="display: none;">Select a Rival Team</option></select>
           </div>
 
           <div class="form-group">
@@ -88,18 +91,52 @@
 
         <div class="form-group">
           <label for="season">Season:</label>
-            <select id="season-select" name="season"></select>
+            <select id="season-select" name="season"><option style="display: none;">Select a Season</option></select>
         </div>
 
         <div class="form-group">
           <label for="location">Location:</label>
-            <select id="location-select" name="location"></select>
+            <select id="location-select" name="location"><option style="display: none;">Select a Location</option></select>
         </div>
 
-          <button type="submit" class="btn btn-primary schedule-game-button">Schedule Game</button>
+          <button type="submit" class="btn btn-outline-primary schedule-game-button">Schedule Game</button>
       </form>
-  
+
+
+
+  <section class="team-form-container">
+      <form class="new-team-form">
+            <h1>Add New Team</h1>
+            <div class="form-group">
+              <label for="name">Team Name:</label>
+              <input class="new-team-input" type="text" name="name" placeholder="Team Name" />
+          </div>
+
+          <div class="form-group">
+            <label for="color">Team Color:</label>
+            <input class="new-team-input" type="text" name="color" placeholder="Team Color" />
+        </div>
+
+        <div class="form-group">
+          <label for="image">Team Logo:</label>
+          <input class="new-team-input" type="text" name="image" placeholder="Team Logo URL" />
+      </div>
+      <button type="submit" class="btn btn-outline-primary create-team-button">Create New Team</button><br>
+
+      </form>
+
+      <form class="delete-team-form">
+        <h1>Delete Team</h1>
+        <div class="form-group">
+          <label for="team">Team Name:</label>
+            <select id="team-delete-select" name="team"><option style="display: none;">Select a Team</option></select>
+        </div>
+        <button type="submit" class="btn btn-outline-danger delete-team-button">Delete Team</button><br>
+      </form>
+     
       </section>
+      </section>
+
       <section class="cards-container"></section>
     </main>
 

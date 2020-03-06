@@ -8,7 +8,7 @@ const gameInfoSection = document.querySelector('.game-info-section')
 fetch(`http://localhost:3000/team_games/${id}`)
 .then(response => response.json())
 .then(teamObject=> {
-    // console.log(teamObject)
+    console.log(teamObject)
 
         let pageTitle = document.createElement('h2')
         pageTitle.innerText = "MATCHUP"
@@ -41,7 +41,8 @@ fetch(`http://localhost:3000/team_games/${id}`)
         let score = document.createElement('h5')
         let locationName = document.createElement('h5')
         let locationAddress = document.createElement('h5')
-
+        let locationLat = teamObject.game.location.lat
+        let locationLng = teamObject.game.location.lng
 
         teamName.innerText = teamObject.team.name
         teamColor.innerText = teamObject.team.color
@@ -64,23 +65,19 @@ fetch(`http://localhost:3000/team_games/${id}`)
         rivalImageContainer.appendChild(rivalImage)
         teamImageContainer.appendChild(teamImage)
 
+        var latLng = {lat: parseFloat(locationLat), lng: parseFloat(locationLng)}
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: latLng,
+            zoom: 17
+          });
+
+        var marker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+          });
+
 })
 
 
-var map;
-function initMap() {
-map = new google.maps.Map(document.getElementById('map'), {
-center: {lat: 39.742043, lng: -104.991531},
-zoom: 15
-});
-}
-
-
-// var map;
-// function initMap() {
-// map = new google.maps.Map(document.getElementById('map'), {
-// center: `{lat: ${teamObject.game.location.lat}, lng: ${teamObject.game.location.lng}}`,
-// zoom: 15
-// });
-// }
 

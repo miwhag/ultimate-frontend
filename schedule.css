@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -53,7 +55,9 @@ table {
 
 
 body{
+   
     font-family: 'Raleway' ;
+
 }
 
 header {
@@ -61,7 +65,16 @@ header {
 	background: rgb(54,110,216);
 	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+.header-title{
+    display: flex;
+    color: white;
+    font-size: 5em;
+    align-self: flex-end;
+    padding-bottom: 0.3em;
+    font-family: 'Roboto Condensed', sans-serif;
 
 }
 
@@ -71,21 +84,13 @@ main{
     width: 100%;
 }
 
-#team-picture-container{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.team-picture{
-width: 35em;
+.disc-picture{
+width:20em;
+height:11em;
 padding-top: 1em;
-
-}
-
-.header-title{
-    color: white;
-    font-size: 4em;
-    align-self: center;
+align-self: flex-end;
+margin-right: 2em;
+margin-left: 3em;
 }
 
 
@@ -110,8 +115,26 @@ padding-top: 1em;
     box-shadow: 5px 10px 40px #bbbbbb
 }
 
-h5,h4{
+h4{
     align-self: center;
+    font-size: 1.3em;
+}
+h5{
+    align-self: center;
+    font-size: 1.2em;
 }
 
+.game-div-container-header{
+height: 3em;
+ font-family: 'Raleway' ;
+ font-size: 1.4em;
+ background: rgb(54,110,216);
+ background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
+ font-weight: bolder;
+display:flex;
+color: white;
+}
 
+.title{
+    align-self: center;
+}

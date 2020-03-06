@@ -1,7 +1,7 @@
 const tbody = document.querySelector('tbody')
 const trTag = document.querySelector('tr')
 const main = document.querySelector('main')
-const scheduleHeader= document.querySelector('#team-picture-container')
+const header = document.querySelector('header')
 
 
 fetch('http://localhost:3000/team_games')
@@ -44,11 +44,11 @@ fetch('http://localhost:3000/team_games')
 
     let headerTitle = document.createElement('h1')
     let headerImg = document.createElement('img')
-    headerImg.src = '/photos/team.png'
-    headerImg.className = 'team-picture'
+    headerImg.src = '/photos/disc.png'
+    headerImg.className = 'disc-picture'
     headerTitle.className = 'header-title'
     headerTitle.innerText = "SCHEDULE"
-    scheduleHeader.append(headerTitle, headerImg)
+    header.append(headerTitle, headerImg)
 })
 
 

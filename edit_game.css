@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -55,19 +56,34 @@ table {
 body{
     font-family: 'Raleway' ;
 }
-
 header {
-	height: 15em;
+	height: 20.5em;
 	background: rgb(54,110,216);
 	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
     display: flex;
-    justify-content: center;
-
+    justify-content: flex-end;
 }
+
+.header-title{
+    display: flex;
+    color: white;
+    font-size: 5em;
+    align-self: flex-end;
+    padding-bottom: 0.3em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.disc-picture{
+	width:20em;
+	height:11em;
+	padding-top: 1em;
+	align-self: flex-end;
+	margin-right: 2em;
+	margin-left: 3em;
+	}
 
 main{
 	display: flex;
-
 }
 
 .cards-container{
@@ -77,18 +93,7 @@ main{
 }
 
 .form-container{
-width: 50%;
-}
-
-
-#team-picture-container{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 10em;
-}
-.team-picture{
-width: 35em;
-padding-top: 1em;
+margin-right: 3em;
 }
 
 .small-frisbee-logo{
@@ -107,22 +112,68 @@ padding-top: 1em;
 }
 
 .card-img-top{
-	width: 10em;
+	width: 7.4em;
+	height: 10.5em;
 	align-self: center;
 	display: flex;
-	padding-top: 3em;
+	padding-top: 2em;
+	padding-bottom: 0.5em;
 }
 
 .new-game-form{
 	border: 1px solid rgba(0,0,0,.125);
-	height: 23em;
+	height: 27em;
 	width: 35em;
 	border-radius: 0.5em;
 	margin-top: 4.5em;
 	margin-left: 4em;
-	padding:1.5em;
+	padding:2em;
+	display: grid;
 }
 
-input{
-	width: 20em;
+.new-team-form, .delete-team-form{
+	display: grid;
+	padding: 1em;
+	margin-top: -0.6em;
+}
+
+.team-form-container{
+	border: 1px solid rgba(0,0,0,.125);
+	height: 34em;
+	width: 35em;
+	border-radius: 0.5em;
+	margin-top: 4em;
+	margin-left: 4em;
+	margin-bottom: 1em;
+	padding:1.5em;
+	display: grid;
+	
+}
+
+.card-body{
+	display: grid;
+}
+
+.btn-outline-danger{
+	margin-top: 0.4em;
+}
+
+.btn-outline-primary{
+	margin: 1em;
+}
+
+
+h1{
+	font-size: 2em;
+	padding-bottom: 1em;
+	padding-top: 0.5em;
+	text-align: center;
+}
+
+.new-team-input{
+width: 20em;
+}
+
+label{
+	padding-left: 1.5em;
 }
