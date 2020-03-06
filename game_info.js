@@ -1,19 +1,22 @@
 const searchParams = new URLSearchParams(window.location.search)
 const id = searchParams.get('id')
-const header = document.querySelector('header')
 const main = document.querySelector('.rival-vs-home-section')
 const gameInfoSection = document.querySelector('.game-info-section')
+const header = document.querySelector('header')
+
+let headerTitle = document.createElement('h1')
+let headerImg = document.createElement('img')
+headerImg.src = '/photos/disc.png'
+headerImg.className = 'disc-picture'
+headerTitle.className = 'header-title'
+headerTitle.innerText = "GAME INFO"
+header.append(headerTitle, headerImg)
 
 
 fetch(`http://localhost:3000/team_games/${id}`)
 .then(response => response.json())
 .then(teamObject=> {
     console.log(teamObject)
-
-        let pageTitle = document.createElement('h2')
-        pageTitle.innerText = "MATCHUP"
-        pageTitle.className = "header-text"
-
         let teamDiv = document.createElement('div')
         let rivalDiv = document.createElement('div')
         teamDiv.className = 'team-div'
@@ -57,7 +60,7 @@ fetch(`http://localhost:3000/team_games/${id}`)
         locationAddress.innerText = teamObject.game.location.address
         vs.innerText = "VS"
 
-        header.append(pageTitle)
+
         gameInfoSection.append( date, time, locationName, locationAddress)
         main.append( teamDiv, vs, rivalDiv)
         teamDiv.append(teamImageContainer,teamName, teamColor)
