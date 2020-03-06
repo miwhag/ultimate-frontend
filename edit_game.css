@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ####################################### */
+
+
+body{
+    font-family: 'Raleway' ;
+}
+header {
+	height: 20.5em;
+	background: rgb(54,110,216);
+	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-title{
+    display: flex;
+    color: white;
+    font-size: 5em;
+    align-self: flex-end;
+    padding-bottom: 0.3em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.disc-picture{
+	width:20em;
+	height:11em;
+	padding-top: 1em;
+	align-self: flex-end;
+	margin-right: 2em;
+	margin-left: 3em;
+	}
+
+main{
+	display: flex;
+}
+
+.cards-container{
+	display: flex;
+	flex-wrap: wrap;
+    margin-top: 4em;
+}
+
+.form-container{
+margin-right: 3em;
+}
+
+.small-frisbee-logo{
+	width: 2em;
+}
+
+.team-logo{
+    width: 7em;
+    height: 7em;
+}
+
+.card{
+	width: 20em;
+	height: 30em;
+	margin: 0.5em;
+}
+
+.card-img-top{
+	width: 7.4em;
+	height: 10.5em;
+	align-self: center;
+	display: flex;
+	padding-top: 2em;
+	padding-bottom: 0.5em;
+}
+
+.new-game-form{
+	border: 1px solid rgba(0,0,0,.125);
+	height: 27em;
+	width: 35em;
+	border-radius: 0.5em;
+	margin-top: 4.5em;
+	margin-left: 4em;
+	padding:2em;
+	display: grid;
+}
+
+.new-team-form, .delete-team-form{
+	display: grid;
+	padding: 1em;
+	margin-top: -0.6em;
+}
+
+.team-form-container{
+	border: 1px solid rgba(0,0,0,.125);
+	height: 34em;
+	width: 35em;
+	border-radius: 0.5em;
+	margin-top: 4em;
+	margin-left: 4em;
+	margin-bottom: 1em;
+	padding:1.5em;
+	display: grid;
+	
+}
+
+.card-body{
+	display: grid;
+}
+
+.btn-outline-danger{
+	margin-top: 0.4em;
+}
+
+.btn-outline-primary{
+	margin: 1em;
+}
+
+
+h1{
+	font-size: 2em;
+	padding-bottom: 1em;
+	padding-top: 0.5em;
+	text-align: center;
+}
+
+.new-team-input{
+width: 20em;
+}
+
+label{
+	padding-left: 1.5em;
+}

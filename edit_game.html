@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="edit_game.css">
+    <script src="edit_game.js" defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <img class ="small-frisbee-logo" src="/photos/friss.png"/>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="schedule.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Schedule</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="schedule.html">View Schedule</a>
+            <a class="dropdown-item" href="edit_game.html">Edit Schedule</a>
+          </div>
+        </li>
+       
+        <li class="nav-item">
+            <a class="nav-link" href="">Playbook</a>
+          </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Frisbee
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">What is frisbee?</a>
+              <a class="dropdown-item" href="#">Frisbee Terms</a>
+            </div>
+          </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Team
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="team_roster.html">Roster</a>
+            <a class="dropdown-item" href="league.html">Leauge</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+    <header>
+      <div class="header-text"></div>
+    </header>
+
+    <main>
+
+
+      <section class="form-container">
+
+        <form class="new-game-form">
+          <h1> Schedule New Game</h1>
+          <div class="form-group">
+            <label for="team">Team Name:</label>
+              <select id="team-select" name="team"></select>
+          </div>
+
+          <div class="form-group">
+            <label for="rival">Rival Name:</label>
+              <select id="rival-select" name="rival"><option style="display: none;">Select a Rival Team</option></select>
+          </div>
+
+          <div class="form-group">
+              <label for="time">Time:</label>
+              <input type="text" name="time" placeholder="Time" />
+          </div>
+
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="text" name="date" placeholder="Date" />
+        </div>
+
+        <div class="form-group">
+          <label for="season">Season:</label>
+            <select id="season-select" name="season"><option style="display: none;">Select a Season</option></select>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location:</label>
+            <select id="location-select" name="location"><option style="display: none;">Select a Location</option></select>
+        </div>
+
+          <button type="submit" class="btn btn-outline-primary schedule-game-button">Schedule Game</button>
+      </form>
+
+
+
+  <section class="team-form-container">
+      <form class="new-team-form">
+            <h1>Add New Team</h1>
+            <div class="form-group">
+              <label for="name">Team Name:</label>
+              <input class="new-team-input" type="text" name="name" placeholder="Team Name" />
+          </div>
+
+          <div class="form-group">
+            <label for="color">Team Color:</label>
+            <input class="new-team-input" type="text" name="color" placeholder="Team Color" />
+        </div>
+
+        <div class="form-group">
+          <label for="image">Team Logo:</label>
+          <input class="new-team-input" type="text" name="image" placeholder="Team Logo URL" />
+      </div>
+      <button type="submit" class="btn btn-outline-primary create-team-button">Create New Team</button><br>
+
+      </form>
+
+      <form class="delete-team-form">
+        <h1>Delete Team</h1>
+        <div class="form-group">
+          <label for="team">Team Name:</label>
+            <select id="team-delete-select" name="team"><option style="display: none;">Select a Team</option></select>
+        </div>
+        <button type="submit" class="btn btn-outline-danger delete-team-button">Delete Team</button><br>
+      </form>
+     
+      </section>
+      </section>
+
+      <section class="cards-container"></section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
