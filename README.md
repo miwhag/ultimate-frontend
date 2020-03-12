@@ -3,10 +3,6 @@
 This was a one week, Mod 2, fullstack project. We made this for a singular coffee shop, one who deals with providing a number of roasters at their shop. Our intention was to create a system for ordering and tracking inventory. Feel free to take a look around -- 
 
 
-<a href="Ultimate.mp4" title="Link Title"><img src="https://i.ibb.co/SchLZCc/Screen-Shot-2020-03-11-at-7-17-11-PM.png" alt="Alternate Text" /></a>
-
-
-
 ---
 
 ## How the app works  
