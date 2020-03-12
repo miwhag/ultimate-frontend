@@ -42,6 +42,8 @@ This mod 3 fullstack app was created with the purpose of creating the ability to
 * Ruby 
 * Javascript 
 * Google Javascript API 
+* Bootstrap 
+* Flickity 
 
 ### Authors
 
