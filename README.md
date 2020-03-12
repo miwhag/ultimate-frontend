@@ -1,6 +1,6 @@
-# Module 2 Fullstack Coffee App 
+# Module 3 Ultimate Frisbee App 
 
-This was a one week, Mod 2, fullstack project. We made this for a singular coffee shop, one who deals with providing a number of roasters at their shop. Our intention was to create a system for ordering and tracking inventory. Feel free to take a look around -- 
+This mod 3 fullstack app was created with the purpose of creating the ability to schedule games and keep track of the roster for the Flatiron Flyers Ultimate Frisbee Team. 
 
 ![](ultimate.gif)
 
@@ -8,38 +8,43 @@ This was a one week, Mod 2, fullstack project. We made this for a singular coffe
 
 ## How the app works  
 
-* To run the app, first clone down the repo to your local device. 
-* `lite-server` into your terminal. This will prompt the application to start, however you will also need the backend repo to see the data: https://github.com/Paradafaii28/Mod-2-project-coffee-backend- 
+* To run the app, first fork and clone down this repo to your local device. 
+* Note you will also need to clone down the backend repo at https://github.com/miwhag/ultimate-backend
+   * In the backend type into your terminal
+        * bundle install 
+        * rails db:migrate 
+        * rails db: seed
+        * rails s (runs your server) 
+        
+* Once you have your backend server running, you can go into the frontend repo you cloned down, and in another terminal tab type `lite-server` into the terminal. This will prompt the application to start. 
 
 * From there you can navigate through the website seen in the video above 
+   * Home will bring you to the homepage 
+   * Frisbee will bring you to the about frisbee page. Currently there is just some lipsum text with some images from past ultimate frisbee teams I played on. 
+   * Schedule will give you a dropdown option to edit the current schedule or view the games in detail. 
+      * The Edit Schedule page allows you to add new teams, create new matchups, delete matchups, and delete teams. 
+      * The Schedule page allows you to view all of the games scheduled. Click on the view more link and it will show you all the information about the game including the location of the game and field on a Google Map. 
 
-* Click the Admin Sign-in link to see the full list of the items in our inventory. On this page you can also:
-    * Add a new coffee roaster 
-    * Add a new blend to the inventory with the coffee roaster you added 
-    * Track items you have in your inventory 
-    * Delete function(in works)
+          * Note: You will need your own API key to see the Google map of the frisbee game location. The Google API link is in the game_info.html file in the scripts. If you are interested in obtaining a key you can get one here at: https://developers.google.com/maps/documentation/geocoding/get-api-key
 
-* The View Coffee Page will show you all of the coffees that we have in our inventory. It matches the data on the inventory page, only this allows you to visually see what we have in our database, as well as show information about individual coffees. You can also click the link of any coffee on the page and will be given the option to add it to your cart.
-
-* Finally our Cart shows all of the items currently stored in our Cart model. You can delete it from the cart by clicking delete. 
+* Finally the Team dropdown will give you an option to view the roster, or view all the players in the league. 
 
 
 ## Things to add / Down the pipeline
 
-* Delete items from the inventory list 
-* Finish checkout cart, including adding sum of all items in the cart 
-* Once you checkout and items have been "purchased", reflect the change in the inventory list 
-* Create seperate sign in flows for owners and shop customers 
+* Allow the ability to sort the scheduled games in order of date 
+* Update/Delete/Create Players on the roster 
+
 
 ### Technologies 
 
 * Ruby on Rails 
-* Active Record 
+* Ruby 
 * Javascript 
+* Google Javascript API 
 
 ### Authors
 
-* Parada (Alice) Richardson - [Github Repo](https://github.com/Paradafaii28)
 * Miwha Geschwind - [Github Repo](https://github.com/miwhag)
 
 
