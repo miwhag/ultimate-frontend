@@ -11,10 +11,10 @@ This mod 3 fullstack app was created with the purpose of creating the ability to
 * To run the app, first fork and clone down this repo to your local device. 
 * Note you will also need to clone down the backend repo at https://github.com/miwhag/ultimate-backend
    * In the backend type into your terminal
-        * bundle install 
-        * rails db:migrate 
-        * rails db: seed
-        * rails s (runs your server) 
+        * `bundle install` 
+        * `rails db:migrate` 
+        * `rails db: seed`
+        * `rails s (runs your server)` 
         
 * Once you have your backend server running, you can go into the frontend repo you cloned down, and in another terminal tab type `lite-server` into the terminal. This will prompt the application to start. 
 
