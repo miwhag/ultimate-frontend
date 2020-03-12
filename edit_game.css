@@ -56,12 +56,15 @@ table {
 body{
     font-family: 'Raleway' ;
 }
+
+
+
 header {
 	height: 20.5em;
 	background: rgb(54,110,216);
 	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
     display: flex;
-    justify-content: flex-end;
+	justify-content: flex-end;
 }
 
 .header-title{
@@ -96,10 +99,15 @@ main{
 margin-right: 3em;
 }
 
+
 .small-frisbee-logo{
 	width: 2em;
+
 }
 
+.nav-link{
+	padding-top: 1em;
+}
 .team-logo{
     width: 7em;
     height: 7em;
