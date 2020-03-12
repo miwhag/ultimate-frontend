@@ -28,6 +28,9 @@ fetch(`http://localhost:3000/team_games/${id}`)
         let time = document.createElement('h5')
         let locationName = document.createElement('h5')
         let locationAddress = document.createElement('h5')
+        let locationFieldNum = document.createElement('h5')
+        let locationFieldType = document.createElement('h5')
+
 
         imageContainer.className = 'image-container'
         textContainer.className = 'text-container'
@@ -48,9 +51,11 @@ fetch(`http://localhost:3000/team_games/${id}`)
         time.innerText = `Time: ${teamObject.game.time}`
         locationName.innerText = `Location: ${teamObject.game.location.name}`
         locationAddress.innerText = `Address: ${teamObject.game.location.address}`
+        locationFieldNum.innerText = `Playing on field number: ${teamObject.game.location.field_num}`
+        locationFieldType.innerText = `Field Type: ${teamObject.game.location.field_type}`
         vs.innerText = "VS"
 
-        textContainer.append(info, date, time, locationName, locationAddress, rivalName, rivalColor)
+        textContainer.append(info, date, time, locationName, locationAddress, locationFieldNum, locationFieldType, rivalName, rivalColor)
         teamInfoMainContainer.append(imageContainer, textContainer)
         imageContainer.append(rivalImage, vs, teamImage)
         
