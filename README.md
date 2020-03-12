@@ -6,6 +6,7 @@ This was a one week, Mod 2, fullstack project. We made this for a singular coffe
 ![](ultimate_video.mp4)
 
 
+
 ---
 
 ## How the app works  
