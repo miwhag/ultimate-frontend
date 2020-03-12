@@ -1,4 +1,4 @@
-# Module 3 Ultimate Frisbee App 
+# Module 3 Ultimate Frisbee App - Frontend
 
 This mod 3 fullstack app was created with the purpose of creating the ability to schedule games and keep track of the roster for the Flatiron Flyers Ultimate Frisbee Team. 
 
