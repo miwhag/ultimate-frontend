@@ -153,6 +153,7 @@ fetch("http://localhost:3000/teams")
 })
 
 newGameForm.addEventListener('submit',function(){
+    event.preventDefault()
     createNewGame()
 })
 
@@ -175,15 +176,16 @@ function createNewGame(){
             time: formTime, 
             date: formDate
         })
-    }).then(response => response.json())
-    .then(result => createNewTeamGame(result))
+    })
+        .then(response => response.json())
+        .then(data => createNewTeamGame(data))
+        .catch( error => console.error(error.message))
 }
 
 
-
-
-
 function createNewTeamGame(result){
+
+    console.log('New team game function result', result)
     const gameid = result.id
 
     const formData = new FormData(newGameForm)
@@ -202,7 +204,7 @@ function createNewTeamGame(result){
             rival: parseInt(formRivalName), 
             game: formGameId
         })
-    })
+    }).then(() => window.location.reload())
 }
 
 const deleteButton = document.querySelector('.delete-team-button')
