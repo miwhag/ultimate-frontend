@@ -34,12 +34,11 @@ This mod 3 fullstack app was created with the purpose of creating the ability to
 
 * Allow the ability to sort the scheduled games in order of date 
 * Update/Delete/Create Players on the roster 
+* Update the score and declare a winner and loser
 
 
 ### Technologies 
 
-* Ruby on Rails 
-* Ruby 
 * Javascript 
 * Google Javascript API 
 * Bootstrap 
