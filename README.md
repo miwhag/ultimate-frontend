@@ -30,7 +30,7 @@ This mod 3 fullstack app was created with the purpose of creating the ability to
 * Finally the Team dropdown will give you an option to view the roster, or view all the players in the league. 
 
 
-## Things to add / Down the pipeline
+### Things to add / Down the pipeline
 
 * Allow the ability to sort the scheduled games in order of date 
 * Update/Delete/Create Players on the roster 
