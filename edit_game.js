@@ -14,7 +14,8 @@ const newTeamForm = document.querySelector('.new-team-form')
 const deleteTeamForm = document.querySelector('.delete-team-form')
 
 
-fetch('http://localhost:3000/team_games')
+
+fetch('https://serene-atoll-97679.herokuapp.com/')
 .then(response => response.json())
 .then(teams => createScheduleCard(teams)) 
 
@@ -55,7 +56,7 @@ function createScheduleCard(teams){
             let result = confirm("Want to delete?");
             if (result) {
             event.target.parentNode.parentNode.remove()
-            fetch(`http://localhost:3000/team_games/${teamObject.id}`, {
+            fetch(`https://serene-atoll-97679.herokuapp.com/${teamObject.id}`, {
                 method: 'DELETE'
             })
             }   
@@ -65,7 +66,7 @@ function createScheduleCard(teams){
  
 const rivalSelect = document.querySelector('#rival-select')
 const teamSelect = document.querySelector('#team-select')
-fetch("http://localhost:3000/teams")
+fetch("https://serene-atoll-97679.herokuapp.com/teams")
 .then( response => response.json())
 .then(teams => {
     teams.map(team => {
@@ -86,7 +87,7 @@ fetch("http://localhost:3000/teams")
 })
  
 const seasonSelect = document.querySelector('#season-select')
-fetch("http://localhost:3000/seasons")
+fetch("https://serene-atoll-97679.herokuapp.com/seasons")
 .then( response => response.json())
 .then(seasons => {
     seasons.map(season => {
@@ -99,7 +100,7 @@ fetch("http://localhost:3000/seasons")
 })
 
 const locationSelect = document.querySelector('#location-select')
-fetch("http://localhost:3000/locations")
+fetch("https://serene-atoll-97679.herokuapp.com/locations")
 .then( response => response.json())
 .then(locations => {
     locations.map(location => {
@@ -123,7 +124,7 @@ function addNewTeam(){
     const newTeamColor = formData.get("color")
     const newTeamImage = formData.get("image")
 
-    fetch('http://localhost:3000/teams', {
+    fetch('https://serene-atoll-97679.herokuapp.com/teams', {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json', 
@@ -138,7 +139,7 @@ function addNewTeam(){
 }
 
 const deleteTeamSelectTag = document.querySelector('#team-delete-select')
-fetch("http://localhost:3000/teams")
+fetch("https://serene-atoll-97679.herokuapp.com/teams")
 .then( response => response.json())
 .then(teams => {
     teams.map(team => {
@@ -164,7 +165,7 @@ function createNewGame(){
     const formTime = formData.get("time")
     const formDate = formData.get("date")
     
-    fetch('http://localhost:3000/games', {
+    fetch('https://serene-atoll-97679.herokuapp.com/games', {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json', 
@@ -193,7 +194,7 @@ function createNewTeamGame(result){
     const formRivalName = formData.get("rival")
     const formGameId = gameid
     
-    fetch('http://localhost:3000/team_games', {
+    fetch('https://serene-atoll-97679.herokuapp.com/', {
         method: 'POST', 
         headers: {
             'Content-Type': 'application/json', 
@@ -215,7 +216,7 @@ deleteButton.addEventListener('click', () => {
         const selectElement = document.querySelector('#team-delete-select')
         const id = selectElement.options[selectElement.selectedIndex].value
         if(id !== 'Select a Team'){
-          fetch(`http://localhost:3000/teams/${id}`, {
+          fetch(`https://serene-atoll-97679.herokuapp.com/teams/${id}`, {
               method: 'DELETE'
           })
         }

@@ -13,7 +13,7 @@ headerTitle.innerText = "GAME INFO"
 header.append(headerTitle, headerImg)
 
 
-fetch(`http://localhost:3000/team_games/${id}`)
+fetch(`https://serene-atoll-97679.herokuapp.com/${id}`)
 .then(response => response.json())
 .then(teamObject=> {
         let imageContainer = document.createElement('div')

@@ -11,7 +11,7 @@ headerTitle.innerText = "LEAGUE"
 header.append(headerTitle, headerImg)
 
 
-fetch("http://localhost:3000/players")
+fetch("https://serene-atoll-97679.herokuapp.com/players")
 .then(response => response.json())
 .then(players => {
     players.map(player => {
