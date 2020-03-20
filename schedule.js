@@ -4,7 +4,7 @@ const main = document.querySelector('main')
 const header = document.querySelector('header')
 
 
-fetch('http://localhost:3000/team_games')
+fetch('https://serene-atoll-97679.herokuapp.com/team_games')
 .then(response => response.json())
 .then(teamGames=> {
     console.log(teamGames)

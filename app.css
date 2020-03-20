@@ -53,58 +53,43 @@ table {
 
 
 body{
-    font-family: 'Raleway' ;
-
+	font-family: 'Raleway' ;
 }
 
 header{
-	height: 25em;
+	height: 20em;
 	background: rgb(54,110,216);
 	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
-    display: block;
+	display: block;
 	justify-content: flex-end;
 	margin-bottom: 1em;
   }
 
 .logo-container{
-display: flex;
-justify-content: center;
-padding-top: 2em;
-padding-bottom: 1.5em;
+	display: flex;
+	justify-content: center;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
 }
 
 .small-frisbee-logo{
 	width: 2em;
 }
 
-.game-content{
-	height: 27em;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	padding-left: 3em;
-}
-
-.hamburger{
-    width: 3em;
-    padding-left: 1.5em;
-    padding-top: 1em;
-}
-
 .logo{
-	width:17em;
-	height:16.6em;
+	width:14em;
+	height: 12;
 }
 
   .carousel{
-	  margin-bottom: 5em;
+	margin-bottom: 5em;
   }
+
   .carousel-image {
 	display: block;
-	height: 35em;
-
+	height: 28em;
 	margin-right: 1em;
-	top: 50%;
+	top: 40%;
 	transform: translateY(-50%)
   }
 

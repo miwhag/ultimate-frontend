@@ -61,7 +61,7 @@ body{
 }
 
 header {
-	height: 20.5em;
+	height: 17em;
 	background: rgb(54,110,216);
 	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
     display: flex;
@@ -71,7 +71,7 @@ header {
 .header-title{
     display: flex;
     color: white;
-    font-size: 5em;
+    font-size: 4em;
     align-self: flex-end;
     padding-bottom: 0.3em;
     font-family: 'Roboto Condensed', sans-serif;
@@ -106,7 +106,7 @@ margin-left: 3em;
 .game-div-container{
     display: flex;
     justify-content: space-around;
-    height: 12em;
+    height: 11em;
     width:90%;
     padding: 2em;
     margin: auto;
@@ -115,19 +115,15 @@ margin-left: 3em;
     box-shadow: 5px 10px 40px #bbbbbb
 }
 
-h4{
+h4, h5{
     align-self: center;
-    font-size: 1.3em;
-}
-h5{
-    align-self: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .game-div-container-header{
 height: 3em;
  font-family: 'Raleway' ;
- font-size: 1.4em;
+ font-size: 1.3em;
  background: rgb(54,110,216);
  background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
  font-weight: bolder;

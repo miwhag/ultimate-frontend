@@ -7,7 +7,7 @@ const headerText = document.createElement('h1')
 headerText.className = 'header-text'
 header.append(headerText)
 
-fetch('http://localhost:3000/teams')
+fetch('https://serene-atoll-97679.herokuapp.com/teams')
 .then(response => response.json())
 .then(teams => {
     const flatiron_flyer = teams.find(team => team.name === "Flatiron Flyers")

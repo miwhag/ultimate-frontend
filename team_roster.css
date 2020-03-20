@@ -62,11 +62,6 @@ header {
 	background: radial-gradient(circle, rgba(54,110,216,0.8211659663865546) 0%, rgba(2,23,71,1) 100%);
     display: flex;
     justify-content: center;
-
-}
-
-main{
-
 }
 
 .card-container{
@@ -77,27 +72,21 @@ main{
 	justify-content: center;
 }
 
-
 #team-picture-container{
     display: flex;
     justify-content: flex-end;
     padding-right: 10em;
 }
+
 .team-picture{
 width: 35em;
 padding-top: 1em;
 }
 
-
-
 .small-frisbee-logo{
 	width: 2em;
 }
 
-.team-logo{
-    width: 7em;
-    height: 7em;
-}
 
 .player-picture{
 	width: 15.5em;
@@ -108,9 +97,7 @@ padding-top: 1em;
 .card{
 	padding: 2em;
 	height: 30em;
-	margin-right: 8em;
-	margin-bottom: 2em;
-	margin-top: 3em;
+	margin: 0em 2em 2em 0em;	
 }
 
 .card-title{
