@@ -1,6 +1,6 @@
 # Ultimate Frisbee App - Frontend
 
-This app was created so teams would have the ability to schedule games and keep track of the roster for the Flatiron Flyers Ultimate Frisbee Team. 
+This app was created for an ultimate frisbee team called the Flatiron Flyers, and gave them the ability to schedule games and keep track of the roster for their team. 
 
 ![](ultimate.gif)
 
